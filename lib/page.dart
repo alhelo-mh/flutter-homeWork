@@ -19,49 +19,49 @@ class page_main extends StatelessWidget {
       height: 80,
       width: 440,
       margin: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-      child: SingleChildScrollView(
-        scrollDirection: Axis.horizontal,
-        child: Row(
-          children: [
-            Container(
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                  border: Border.all(
-                      color: Color.fromARGB(255, 97, 94, 94), width: 2),
-                  borderRadius: BorderRadius.circular(10.0),
-                  color: Colors.white),
-              height: 67,
-              width: 300,
-              margin: EdgeInsetsDirectional.only(end: 10),
-              child: Text(
-                label,
-                textScaleFactor: 2,
-                style: TextStyle(color: Color.fromARGB(255, 97, 94, 94)),
-              ),
+      // child: SingleChildScrollView(
+      //   scrollDirection: Axis.horizontal,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Container(
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+                border: Border.all(
+                    color: Color.fromARGB(255, 97, 94, 94), width: 2),
+                borderRadius: BorderRadius.circular(10.0),
+                color: Colors.white),
+            height: 67,
+            width: 300,
+            margin: EdgeInsetsDirectional.only(end: 10),
+            child: Text(
+              label,
+              textScaleFactor: 2,
+              style: TextStyle(color: Color.fromARGB(255, 97, 94, 94)),
             ),
-            Container(
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                  border: Border.all(
-                      color: Color.fromARGB(255, 97, 94, 94), width: 2),
-                  borderRadius: BorderRadius.circular(10.0),
-                  color: Colors.white),
-              height: 67,
-              width: 115,
-              child: Text(
-                value,
-                textScaleFactor: 2,
-                style: TextStyle(
-                    color: Color.fromARGB(255, 97, 94, 94), fontSize: 12),
-              ),
+          ),
+          Container(
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+                border: Border.all(
+                    color: Color.fromARGB(255, 97, 94, 94), width: 2),
+                borderRadius: BorderRadius.circular(10.0),
+                color: Colors.white),
+            height: 67,
+            width: 115,
+            child: Text(
+              value,
+              textScaleFactor: 2,
+              style: TextStyle(
+                  color: Color.fromARGB(255, 97, 94, 94), fontSize: 12),
             ),
+          ),
 
-            // Text(label,
-            // ),
-            // SizedBox(width: 20),
-            // Text(value, style: TextStyle(fontSize: 25))
-          ],
-        ),
+          // Text(label,
+          // ),
+          // SizedBox(width: 20),
+          // Text(value, style: TextStyle(fontSize: 25))
+        ],
       ),
     );
   }
